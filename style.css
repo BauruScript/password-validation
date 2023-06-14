@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(to left, #2C5364, #203A43, #0F2027); 
+}
+
+.wrapper {
+  background-color: #fff;
+  width: 450px;
+  padding: 28px;
+  border-radius: 8px;
+}
+
+.wrapper .pass-field {
+  height: 65px;
+  width: 100%;
+  position: relative;
+}
+
+.pass-field input {
+  width: 100%;
+  height: 100%;
+  padding: 0 17px;
+  outline: none;
+  border: 1px solid #999;
+  border-radius: 4px;
+  font-size: 1.3rem;
+}
+
+.pass-field i {
+  right: 18px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #999;
+}
+
+.wrapper .content {
+  margin: 20px 0 10px;
+}
+
+.content p {
+  font-size: 1.3rem;
+}
+
+.content .requirement-list {
+  margin-top: 20px;
+}
+
+.requirement-list li {
+  list-style: none;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.requirement-list li i {
+  font-size: .6rem;
+  color: #aaa;
+  width: 20px;
+}
+
+.requirement-list li.valid i {
+  font-size: 1.2rem;
+  color: #2C5364;
+}
+
+.requirement-list li span {
+  margin-left: 12px;
+}
+
+.requirement-list li.valid span {
+  color: #999;
+}
